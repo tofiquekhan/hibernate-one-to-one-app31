@@ -1,10 +1,22 @@
 package myproject.onetoone.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "acc4")
 public class Account {
 
+	@Id
+	@Column
 	private String accNo;
+	@Column
 	private String accName;
+	@Column
 	private String accType;
+	@Column
 	private int balance;
 	public String getAccNo() {
 		return accNo;
